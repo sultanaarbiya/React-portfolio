@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div className='Header'>
       <div className='logo'>  <h1>Port<span>folio</span></h1></div>
-      <ul className={click? "nav-menu.active": 'nav-menu'}>
+      <ul className={click? "nav-menu active": 'nav-menu'}>
         <li><Link to="/">Home</Link> </li>
         <li><Link to="/about">About</Link> </li>
         <li><Link to="/myservices">MyServices</Link> </li>

@@ -1,0 +1,67 @@
+.services{
+ display:flex;
+ justify-content: space-between;
+ align-items:flex-start;
+ flex-direction: column;
+ margin: 2rem;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color:#a0a0a0;
+    margin: 3rem 3rem 0 0;
+}
+.boxes h1{
+    color: #fff;
+   text-align: left;
+}
+.boxes p{
+ text-align: justify;
+}
+.UI{
+  background-color:#353839;
+  border-radius: 10px;  
+  padding: 2rem;
+  width:fit-content;
+  margin-right: auto;
+}
+.Brand{
+    background-color:#353839;
+    border-radius: 10px;  
+    padding: 2rem;
+    width:fit-content;
+    margin-left: 1rem;
+}
+.Web{
+    background-color:#353839;
+    border-radius: 10px;  
+    padding: 2rem;
+    width:fit-content;
+    margin-left: 1rem;
+}
+.UI:hover{
+    background-color: #fa8862;
+
+}
+.UI FaDesktop:hover{
+ color: #fff;
+}
+.Brand:hover{
+    background-color:  #fa8862;
+}
+.Web:hover{
+    background-color:  #fa8862;
+}
+.services h2::after{
+    content: "";
+    background-color: #FC6736;
+    width:0;
+    height: 3px;
+    display: block;
+}
+h2:hover::after{
+width: 50%;
+transition: width 0.3s linear ;
+}
