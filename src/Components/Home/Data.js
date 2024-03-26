@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-// import image from '../images/arru.png'
+
 function Data() {
     return (
         <div className='home-container'>

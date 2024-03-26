@@ -19,7 +19,7 @@
 .text pre{
     color:black;
 }
-.fa-icons{
+.icons{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -33,19 +33,19 @@
 }
 .details{
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color:transparent;
+  justify-content: center;
+  align-items: center;
+ background-color:transparent; 
   border:2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 5px 5px rgba(77, 70, 56, 0.1);
   border-radius: 10px;
-  padding: 20px 30px;
+  padding: 20px 20px  40px 40px;
   background-position: center;
+   gap:1rem;
+   margin: auto;
 
 }
-.details input{
-    display: flex;
-}
+
 .details button{
     background-color:rgb(243, 156, 84);
     color: #fff;
@@ -54,10 +54,13 @@
     cursor: pointer;
     width: 150px;
     padding: 10px;
-    transform: translateX(17rem);
+    float: right;
+    margin-top: 5px;
+   
 }
 .details input
 {
+    display: flex;
     width:400px;
     height:20px;
     border: none;
@@ -66,15 +69,18 @@
     font-weight:500;
     color:#FC6736;
     border-radius: 5px;
+    margin-top: 10px;
 } 
 .details textarea{
     height: 140px;
+    width: 420px;
     padding-top: 15px;
     border-radius: 5px;
     padding-left: 25px;
     border: none;
     color:#FC6736;
     outline: none;
+    margin-top: 10px;
 }
 .details input::placeholder{
     color: #FC6736;
@@ -95,8 +101,31 @@
     font-size: small;
 }
 
-@media screen and(max-width:1400px) {
+ @media (max-width:1000px) {
     .details{
-        
+        margin-top: 1rem;
     }
-}
+    .details input{
+        width:auto;
+        height: fit-content;
+    }
+    .details textarea{
+        width: auto;
+        height: fit-content;
+    }
+    .Contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        font-size: medium;
+    }
+    .iconss{
+        font-size: medium;
+    }
+    .details button{
+       transform: none;
+       width: fit-content;
+    }
+   
+} 
