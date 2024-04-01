@@ -41,9 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "exports": {
-    "./css": "./swiper.min.css",
-    "./css/bundle": "./swiper-bundle.min.css"
-   }
+  }
 }
