@@ -6,10 +6,12 @@ function About() {
   return (
     <div>
       <section className='about'>
+        <div className='about-box'>
         <div className='circle'>
         <img src={require("./arru.png")}></img>
         </div>
         <Content/>
+        </div>
       </section>
     </div>
   )

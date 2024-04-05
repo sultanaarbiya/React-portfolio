@@ -9,14 +9,16 @@ function Contact(){
   return (
     <div className='Footer'>
       <section className="Contact">
+      <div className='contact-box'>
+      
         <div className='text'>
           <h1>Let's make something
             <pre>phenomenal.</pre>
           </h1>
           <div className='icons'>
-            <a><FaPhone size={30} /> +91 6361981037</a>
-            <a><FaEnvelope size={30} />   arbiyasultanaece003@gmail.com</a>
-            <a> <FaGlobe size={30} />   www.google.com</a>
+            <a><FaPhone size={20} /> +91 6361981037</a>
+            <a><FaEnvelope size={20} />   arbiyasultanaece003@gmail.com</a>
+            <a> <FaGlobe size={20} />   www.google.com</a>
           </div>
 
 
@@ -30,7 +32,7 @@ function Contact(){
         <div className="details">
                 <Validate/>
         </div>
-       
+       </div>
       </section>
       <div className="final">
         <FaCopyright style={{ color: "#fff" }}> </FaCopyright><h5>2023 all rights reserved</h5>

@@ -5,9 +5,17 @@ height:100vh;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color:  rgb(66, 59, 59);
+background-color:  rgba(128, 124, 123, 0.966)
 
 
+}
+.about-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* padding: 15rem; */
+     margin:10rem; 
 }
 .circle{
     display:flex;
@@ -16,6 +24,8 @@ background-color:  rgb(66, 59, 59);
     background-color: rgba(255, 144, 104, 0.966);
     border-radius: 50%;
     margin: 2rem;
+    width: 350px;
+    height:350px;
 }
 .circle img{
     width:250px;
@@ -24,12 +34,15 @@ background-color:  rgb(66, 59, 59);
 }
 .Content{
     display: flex;
- 
+    
     flex-direction: column;
     margin: 1rem;
 }
 .Content h1{
     font-size: xx-large;
+}
+.Content p{
+    font-size: large;
 }
 .Content h1::after{
     content: "";
@@ -49,7 +62,7 @@ transition: width 0.3s linear ;
     border:none;
     color:#fff;
 }
-@media  screen and (max-width:500px){
+@media screen and (max-width:500px){
   
     .about{
         display: flex;
@@ -60,4 +73,25 @@ transition: width 0.3s linear ;
     .Content{
         width:fit-content;
     }
+    .about-box{
+        padding: fit-content;
+    }
+    .circle{
+        width: auto;
+        height: auto;
+    }
+    .about-box{
+        padding: fit-content;
+        margin: 3rem;
+    }
 }
+/* @media  screen and (max-width:810px){
+  
+    .about-box{
+        padding: fit-content;
+        margin: 3rem;
+    }
+    .Content{
+        width: fit-content;
+    }
+} */

@@ -4,6 +4,8 @@
  align-items:flex-start;
  flex-direction: column;
  margin: 2rem;
+ margin-left: 10rem;
+ margin-right: 10rem;
 }
 
 .boxes{

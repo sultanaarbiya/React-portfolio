@@ -46,6 +46,13 @@ transition: width 0.3s linear;
 .hamburger{
     display: none;
 }
+/* @media screen  and(min-width:240px) {
+    .nav-menu.active{
+        left: 3200px;
+        top:-220px;
+        z-index: 4;
+    }
+} */
 @media screen and (max-width:1040px){
     .nav-menu{
         flex-direction: column;
@@ -65,6 +72,8 @@ transition: width 0.3s linear;
         left: 700px;
         top:-220px;
         z-index: 5;
+        position: absolute;
+      
 
     }
     .nav-menu li{

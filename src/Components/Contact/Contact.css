@@ -1,5 +1,6 @@
 .Footer{
     box-sizing: border-box;
+   
 }
 .Contact{
     display: flex;
@@ -8,16 +9,23 @@
     flex-direction: row;
     background-color: rgb(243, 156, 84);
     height :auto;
-    padding: 2rem;
-   
-
+    padding: 3rem;
+}
+.contact-box{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 .text{
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 500;
 }
 .text pre{
     color:black;
+    font-weight:bolder;
+   
 }
 .icons{
     display: flex;
@@ -61,8 +69,8 @@
 .details input
 {
     display: flex;
-    width:400px;
-    height:20px;
+    width:300px;
+    height:15px;
     border: none;
     outline: none;
     padding: 25px;
@@ -72,8 +80,8 @@
     margin-top: 10px;
 } 
 .details textarea{
-    height: 140px;
-    width: 420px;
+    height: 100px;
+    width: 320px;
     padding-top: 15px;
     border-radius: 5px;
     padding-left: 25px;
