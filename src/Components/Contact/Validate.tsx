@@ -7,7 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 type FormData = {
     UserName: string;
     Email: string;
-    Message: string;
+    Feedback: string;
 };
 
 
@@ -17,10 +17,13 @@ function Validate() {
         .object({
             UserName: z.string().min(3).max(20),
             Email: z.string().email(),
-            Message: z.string(),
+            Feedback: z.string(),
         })
 
-    const { register, handleSubmit } = useForm<FormData>
+    const { register,
+         handleSubmit,
+         formState:{errors},
+         } = useForm<FormData>
     ({ resolver: zodResolver(schema) })
 
     const submitData = (data:FormData)=>{
@@ -30,9 +33,11 @@ function Validate() {
         <div >
                 <form onSubmit={handleSubmit(submitData)} >
                     <input type="text" placeholder = "Your Name" {...register("UserName")} ></input>
-                    
+                    {errors.UserName && <span>{errors.UserName.message}</span>}
                   <input type="text" placeholder = "Email Address" {...register("Email")}   />
-                  <textarea   placeholder="Message"{...register("Message")}/>
+                  {errors.Email && <span>{errors.Email.message}</span>}
+                  <textarea   placeholder="Message"{...register("Feedback")}/>
+                  {errors.Feedback && <span>{errors.Feedback.message}</span>}
                   <br/>
                   <button>Submit</button>
                 </form>

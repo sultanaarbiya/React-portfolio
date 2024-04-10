@@ -67,3 +67,30 @@ h2:hover::after{
 width: 50%;
 transition: width 0.3s linear ;
 }
+
+@media (max-width:769px){
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+
+    }
+    .Brand{
+        margin: 0;
+    }
+    .Web{
+        margin:0;
+    }
+    .services{
+        margin: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding-left: 25%;
+    }
+    .services h2{
+        margin-left: -50%;
+    }
+}

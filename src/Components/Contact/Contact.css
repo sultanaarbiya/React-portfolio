@@ -66,6 +66,9 @@
     margin-top: 5px;
    
 }
+.details span{
+    color:#fff;
+}
 .details input
 {
     display: flex;
@@ -109,7 +112,7 @@
     font-size: small;
 }
 
- @media (max-width:1000px) {
+ @media (max-width:769px) {
     .details{
         margin-top: 1rem;
     }
@@ -118,15 +121,16 @@
         height: fit-content;
     }
     .details textarea{
-        width: auto;
+        width:190px;
         height: fit-content;
     }
-    .Contact{
+    .contact-box{
         display: flex;
         flex-direction: column;
     }
     .text{
         font-size: medium;
+
     }
     .iconss{
         font-size: medium;

@@ -62,11 +62,17 @@
         margin-right: 1.2rem;
     }
 }
-@media  screen and (max-width:1400px) {
+@media  screen and (max-width:769px) {
     .icons{
         display:flex;
          /* flex-direction: row;
          margin-bottom: 1rem; */
         margin-right: 1.5rem;
     }
+}
+@media (min-width:320px){
+    .home-container{
+        margin-left: 4rem;
+    }
+    
 }

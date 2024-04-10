@@ -1,6 +1,8 @@
 import React from 'react'
 import "./MyPortfolio.css"
 import Slider from './Slider';
+// import slideData from 'Images'
+// import Carousel from './Carousel'
 
 
 function MyPortfolio() {

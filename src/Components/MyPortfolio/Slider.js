@@ -1,45 +1,52 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
-
-import './MyPortfolio.css'
-
-// import required modules
+import './MyPortfolio.css';
+import Popup from './Popup'; // Assuming you have a Popup component
 import { Grid, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
+
+
 
 export default function App() {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
     <>
       <Swiper
         slidesPerView={2}
         grid={{
           rows: 2,
-          fill:"row",
+          fill: "row",
         }}
-        spaceBetween={30}
+        spaceBetween={50}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
-        modules={[Grid, Pagination]}
+        navigation={true}
+        modules={[Grid,Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-       
-        <SwiperSlide className='swipe'> <img src={require("./Images/image1.png")} style={{width:"100%"}}></img></SwiperSlide>
-        <SwiperSlide className='swipe'> <img src={require("./Images/image2.png")} style={{width:"100%"}}></img></SwiperSlide>
-        <SwiperSlide className='swipe'> <img src={require("./Images/image3.png")} style={{width:"100%"}}></img></SwiperSlide>
-        <SwiperSlide className='swipe'> <img src={require("./Images/imag4.png")} style={{width:"100%"}}></img></SwiperSlide>
-        <SwiperSlide className='swipe'> <img src={require("./Images/imag5.png")} style={{width:"100%"}}></img></SwiperSlide>
-        <SwiperSlide className='swipe'> <img src={require("./Images/image6.png")}  style={{width:"100%"}}></img></SwiperSlide>
-        <SwiperSlide className='swipe'> <img src={require("./Images/image7.png")}  style={{width:"100%"}}></img></SwiperSlide>
-        <SwiperSlide className='swipe'> <img src={require("./Images/image8.png")}  style={{width:"100%"}}></img></SwiperSlide>
-        <SwiperSlide className='swipe'> <img src={require("./Images/tindog.jpg")}  style={{width:"100%"}}></img></SwiperSlide>
-       
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((index) => (
+          <SwiperSlide
+            key={index}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <img src={require(`./Images/image${index}.png`)} style={{ width: "100%" }} />
+          </SwiperSlide>
+        ))}
       </Swiper>
+      {hoveredIndex !== null && <Popup imageIndex={hoveredIndex} />}
     </>
   );
 }

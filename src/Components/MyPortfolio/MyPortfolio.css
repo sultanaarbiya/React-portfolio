@@ -1,33 +1,15 @@
-.swiper {
-  width: 50%;
-  height: 40%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  height: calc((100% - 20px) / 2) !important;
-  width:auto;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-}
 .portfolio{
   display: flex;
   flex-direction: column;
   justify-content:center;
-  margin:10px;
   padding:10px;
+  width:100%;
+  margin: 0 2rem 0 2rem;
   
 }
 .portfolio h1{
-  margin-left: 16rem;
+  margin-left: 3rem;
 }
 .portfolio h1::after{
   content: "";
@@ -41,17 +23,113 @@ width: 2%;
 transition: width 0.3s linear ;
 }
 
-.swipe img {
-  transition: 1s ease;
-  opacity: 0.3;
-  
-  }
-  
-  .swipe img:hover{
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(3);
-  transition: 1s ease;
-  opacity: 1;
 
+.swiper {
+  width: 50%;
+  height: 50%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.swiper-slide img:hover{
+transform: scale(100%);
+}
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.popup-image {
+  max-width: 800px;
+  max-height: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:769px) {
+  .portfolio{
+    margin: none;
   }
+  .swiper {
+    width: 150%;
+    height: 150%;
+  }
+  .popup-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  
+  .popup-image {
+    max-width: 270px;
+    max-height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+}
+
+
+
+
+
+
+
+/* 
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+} */
