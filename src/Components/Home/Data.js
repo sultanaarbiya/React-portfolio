@@ -12,7 +12,7 @@ function Data() {
                 <button className='data-btn'>Contact me</button>
             </div>
             <div className='shape'>
-                <img src={require("./arru.png")}></img>
+                <img src={require("./arru.png")} ></img>
             </div>
         </div>
     )

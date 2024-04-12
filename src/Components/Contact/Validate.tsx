@@ -36,6 +36,7 @@ function Validate() {
                     {errors.UserName && <span>{errors.UserName.message}</span>}
                   <input type="text" placeholder = "Email Address" {...register("Email")}   />
                   {errors.Email && <span>{errors.Email.message}</span>}
+                  <br/>
                   <textarea   placeholder="Message"{...register("Feedback")}/>
                   {errors.Feedback && <span>{errors.Feedback.message}</span>}
                   <br/>

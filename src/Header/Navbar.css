@@ -63,7 +63,7 @@ transition: width 0.3s linear;
         position: absolute;
         background-color: rgb(54, 54, 54,0.4); 
         padding: 1rem;
-        right:-90%;
+        right:-190%;
         top:90px;
         z-index:4;
         transition:0.3s;
@@ -73,9 +73,7 @@ transition: width 0.3s linear;
     .nav-menu.active{
         right:-20%;
         position: absolute;
-     
-      
-
+        
     }
     .nav-menu li{
         padding: 0;
@@ -90,9 +88,12 @@ transition: width 0.3s linear;
     .hamburger{
         display: initial;
     }
+    .Header{
+        height: auto;
+    }
 
 }
-@media (min-width:320px){
+/* @media (min-width:320px){
     .nav-menu{
         display:flex;
         flex-direction: column;
@@ -106,7 +107,7 @@ transition: width 0.3s linear;
         top:90px;
         z-index:4;
         transition:0.3s;
-        /* padding: 1rem; */
+        
    
     } 
     .nav-menu.active{
@@ -116,4 +117,4 @@ transition: width 0.3s linear;
       
 
     }
-}
+} */

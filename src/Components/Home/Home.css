@@ -52,27 +52,30 @@
 
 @media screen and (max-width:500px) {
     .shape{
-        width:10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width:10rem; 
         height:15rem;
-        margin-top: 3rem;      
+        margin-left: 5rem;
     }
     .shape img{
         width:180px;
         margin-top: 2rem;
         margin-right: 1.2rem;
     }
-}
-@media  screen and (max-width:769px) {
-    .icons{
-        display:flex;
-         /* flex-direction: row;
-         margin-bottom: 1rem; */
-        margin-right: 1.5rem;
+    .home-icons{
+      margin-top: 15rem;
     }
-}
-@media (min-width:320px){
     .home-container{
-        margin-left: 4rem;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0.3rem;
     }
     
+
+}
+
+@media (min-width:320px){
+
 }

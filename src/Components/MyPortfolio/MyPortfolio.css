@@ -1,17 +1,19 @@
 
-.portfolio{
-  display: flex;
+.portfolio-container{
+  /* display: flex;
   flex-direction: column;
   justify-content:center;
   padding:10px;
   width:100%;
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem 0 2rem; */
+  display:grid;
+  margin:1rem;
   
 }
-.portfolio h1{
+.portfolio-container h1{
   margin-left: 3rem;
 }
-.portfolio h1::after{
+.portfolio-container h1::after{
   content: "";
   background-color: #FC6736;
   width:0;
@@ -22,8 +24,151 @@ h1:hover::after{
 width: 2%;
 transition: width 0.3s linear ;
 }
+.portfolio-box{
+  margin: 3rem;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:2.5rem;
+}
+.portfolio-item{
+  background:rgba(6, 6, 7, 0.3) ;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  width: 370px;
+  height:280px;
+
+}
+
+.portfolio-item:hover{
+  border-color:whitesmoke;
+  background-color: transparent;
+  box-shadow: 0 0 10px 0 rgba(245,245,245,0.5);
+}
+.portfolio_item_image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  width: 340px;
+  height:250px;
+}
+.btns{
+  display:flex;
+  justify-content: space-between;
+  gap:1rem;
+}
+.portfolio_item_image img{
+  width:400px;
+}
+.btn{
+  background-color: #FC6736;
+  color:#fff;
+  padding: 10px;
+  border:none;
+  width:70px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.btn1{
+  background-color:transparent;
+  color:#FC6736;
+  padding: 10px;
+  border:1px solid whitesmoke;
+  width:100px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+@media (max-width:769px){
+  .portfolio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio-box{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .portfolio-item{
+   display:flex;
+   justify-content: center;
+   width:200px;
+   height:200px;
+   margin-right: 10rem;
+  }
+  .portfolio_item_image{
+   display: flex;
+   justify-content: center;
+
+  }
+  .portfolio_item_image img{
+    width:200px;
+    border-radius:5px;
+  }
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .swiper {
   width: 50%;
   height: 50%;
@@ -34,7 +179,6 @@ transition: width 0.3s linear ;
   font-size: 18px;
   background: #fff;
 
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,14 +233,6 @@ transform: scale(100%);
   }
   
 }
-
-
-
-
-
-
-
-/* 
 .swiper {
   width: 100%;
   height: 100%;

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./MyPortfolio.css"
+import Portfolio from "./Portfolio"
 import Slider from './Slider';
 // import slideData from 'Images'
 // import Carousel from './Carousel'
@@ -8,9 +9,11 @@ import Slider from './Slider';
 function MyPortfolio() {
   return (
     <div>
-   <section className='portfolio'>
+   <section className='portfolio-container'>
    <h1>My Portfolio</h1>
-       <Slider/>
+   
+       <Portfolio/>
+       {/* <Slider/> */}
    </section>
     </div>
   )
