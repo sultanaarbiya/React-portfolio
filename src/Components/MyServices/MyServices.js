@@ -1,31 +1,72 @@
 import React from 'react'
-import {FaDesktop,FaPencilRuler,FaSitemap} from 'react-icons/fa'
+import { useState } from 'react';
+import { FaDesktop, FaGlobe, FaGithub } from 'react-icons/fa'
 import './MyServices.css'
 
 
 function MyServices() {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <div>
       <section className='services'>
         <h2>My Services</h2>
         <div className="boxes">
+
           <div className="UI">
-           
-          {/* <img src="image/icons8-web-design-100.png" size={40}/> */}
-           <FaSitemap style={{color:" #fa8862"}} size={40}/> 
-              <h1>UI/UX Design</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi omnis quod dolor qui sed similique! Ipsum, quisquam aperiam ea, optio perspiciatis, recusandae temporibus repudiandae animi nisi eum adipisci sunt nostrum?</p>
+            <FaGithub style={{ color: isHovered ? ' #fff' : '#fa8862' }} size={40}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave} />
+            <h1>Git Version Control</h1>
+            <p>It refers to the process of
+              tracking and managing changes to
+              digital assets over time.
+              <ul>
+                <li>Repository Management</li>
+                <li>Branching and Merging</li>
+                <li>Continuous Deployment</li>
+                <li>Git Workflow Customization</li>
+              </ul>
+            </p>
+
+
           </div>
           <div class="Brand">
 
-          <FaPencilRuler   style={{color:" #fa8862"}} size={40}/>
-              <h1>Branding Design</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa facere laborum aperiam, placeat, minus dolor saepe ea ipsam ipsa dolores quo nostrum officia qui nesciunt velit rerum, corrupti ut tempora.</p>
+            <FaDesktop style={{ color: isHovered ? '#fff' : ' #fa8862' }} size={40}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave} />
+            <h1>Frontend Developer</h1>
+            <p>I like to code things from Scratch, and enjoy bringing ideas to life in the browser.
+              <ul>
+                <li>Website Development</li>
+                <li>UI/UX Design</li>
+                <li>Performence Optimization</li>
+                <li>Responsive Design Implementation</li>
+                <li>Third-Party AOI Integration</li>
+              </ul>
+            </p>
           </div>
           <div className="Web">
-          <FaDesktop style={{color:" #fa8862"}} size={40}/>
-              <h1>Web Development</h1>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet doloribus illum corrupti quia officiis nulla iusto magni vero cupiditate, tempora iste dicta sapiente nihil aspernatur? Ipsum eligendi quidem at placeat?</p>
+            <FaGlobe style={{ color: isHovered ? '#fff' : ' #fa8862' }} size={40}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave} />
+            <h1>Web Development</h1>
+            <p>Welcome to my web development services!
+               I specialize in creating modern, responsive, and user-friendly websites and web applications tailored to your unique needs and goals.
+              <ul>
+                <li>Custom Website Development</li>
+                <li>Responsive Design</li>
+                <li>Content Management Systems</li>
+                <li>E-commerce Solutions</li>
+              </ul>
+            </p>
           </div>
         </div>
       </section>
