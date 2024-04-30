@@ -20,7 +20,7 @@ const Portfolio = () => {
                 </div>
                 <div className="btns">
                     <a href="https://github.com/sultanaarbiya/Myntra_clone" className='btn' target="-blank">Github</a>
-                    <a href="" className='btn1' target="-blank">Live Demo</a>
+                    <a href="https://sultanaarbiya.github.io/Myntra_clone/" className='btn1' target="-blank">Live Demo</a>
                 </div>
             </article>
 
@@ -30,7 +30,7 @@ const Portfolio = () => {
                 </div>
                 <div className="btns">
                     <a href="https://github.com/sultanaarbiya/CAR_RACE_GAME" className='btn' target="-blank">Github</a>
-                    <a href="" className='btn1' target="-blank">Live Demo</a>
+                    <a href="https://sultanaarbiya.github.io/CAR_RACE_GAME/" className='btn1' target="-blank">Live Demo</a>
                 </div>
             </article>
 
@@ -40,7 +40,7 @@ const Portfolio = () => {
                 </div>
                 <div className="btns">
                     <a href="https://github.com/sultanaarbiya/Bootstrap_TinDog" className='btn' target="-blank">Github</a>
-                    <a href="" className='btn1' target="-blank">Live Demo</a>
+                    <a href="https://sultanaarbiya.github.io/Bootstrap_TinDog/" className='btn1' target="-blank">Live Demo</a>
                 </div>
             </article>
 
@@ -50,7 +50,7 @@ const Portfolio = () => {
                 </div>
                 <div className="btns">
                     <a href="https://github.com/sultanaarbiya/Ball_Project" className='btn' target="-blank">Github</a>
-                    <a href="" className='btn1' target="-blank">Live Demo</a>
+                    <a href="https://sultanaarbiya.github.io/Ball_Project/" className='btn1' target="-blank">Live Demo</a>
                 </div>
             </article>
 
@@ -60,7 +60,7 @@ const Portfolio = () => {
                 </div>
                 <div className="btns">
                     <a href="https://github.com/sultanaarbiya/Tik_Tac_Toe" className='btn' target="-blank">Github</a>
-                    <a href="" className='btn1' target="-blank">Live Demo</a>
+                    <a href="https://sultanaarbiya.github.io/Tik_Tac_Toe/" className='btn1' target="-blank">Live Demo</a>
                 </div>
             </article>
 
@@ -69,8 +69,8 @@ const Portfolio = () => {
                     <img src={IMG6} alt="" />
                 </div>
                 <div className="btns">
-                    <a href="https://github.com/sultanaarbiya/Calculator_JS" className='btn' target="-blank">Github</a>
-                    <a href="" className='btn1' target="-blank">Live Demo</a>
+                    <a href="https://github.com/sultanaarbiya/Weather_APP" className='btn' target="-blank">Github</a>
+                    <a href="https://sultanaarbiya.github.io/Weather_APP/" className='btn1' target="-blank">Live Demo</a>
                 </div>
             </article>
 
@@ -81,7 +81,7 @@ const Portfolio = () => {
                 </div>
                 <div className="btns">
                     <a href="https://github.com/sultanaarbiya/React" className='btn' target="-blank">Github</a>
-                    <a href="" className='btn1' target="-blank">Live Demo</a>
+                    <a href="https://sultanaarbiya.github.io/React/" className='btn1' target="-blank">Live Demo</a>
                 </div>
             </article>
             <article className='portfolio-item'>
@@ -89,8 +89,8 @@ const Portfolio = () => {
                     <img src={IMG8} alt="" />
                 </div>
                 <div className="btns">
-                    <a href="https://github.com/sultanaarbiya/Weather_APP" className='btn' target="-blank">Github</a>
-                    <a href="" className='btn1' target="-blank">Live Demo</a>
+                    <a href="https://github.com/sultanaarbiya/My_Portfolio" className='btn' target="-blank">Github</a>
+                    <a href="https://sultanaarbiya.github.io/My_Portfolio/" className='btn1' target="-blank">Live Demo</a>
                 </div>
             </article>
             <article className='portfolio-item'>
@@ -98,8 +98,8 @@ const Portfolio = () => {
                     <img src={IMG9} alt="" />
                 </div>
                 <div className="btns">
-                    <a href="https://github.com/sultanaarbiya/QUIZ_APP" className='btn' target="-blank">Github</a>
-                    <a href="" className='btn1' target="-blank">Live Demo</a>
+                    <a href="https://github.com/sultanaarbiya/Calculator_JS" className='btn' target="-blank">Github</a>
+                    <a href="https://sultanaarbiya.github.io/Calculator_JS/" className='btn1' target="-blank">Live Demo</a>
                 </div>
             </article>
 
